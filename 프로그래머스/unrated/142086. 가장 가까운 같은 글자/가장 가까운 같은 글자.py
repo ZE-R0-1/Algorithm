@@ -1,12 +1,8 @@
 def solution(s):
     answer = []
-    s_dict = dict()
-    
     for i in range(len(s)):
-        if s[i] not in s_dict:
-            answer.append(-1)
+        if s[i] in s[0:i]:
+            answer.append(i - s[0:i].rindex(s[i]))
         else:
-            answer.append(i-s_dict[s[i]])
-        s_dict[s[i]] = i
-        
+            answer.append(-1)
     return answer
