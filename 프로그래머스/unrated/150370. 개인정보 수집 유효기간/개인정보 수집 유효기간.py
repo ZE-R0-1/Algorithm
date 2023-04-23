@@ -1,20 +1,16 @@
-def dateToDay(date):
-    year, month, day = map(int, date.split("."))
-    return (year * 12 * 28) + (month * 28) + day
-    
 def solution(today, terms, privacies):
     answer = []
-    
-    today = dateToDay(today)
-    
-    termsInfo = dict()
-    for term in terms:
-        term = term.split()
-        termsInfo[term[0]] = int(term[1]) * 28
-    
-    for i in range(len(privacies)):
-        date, term = privacies[i].split()
-        if dateToDay(date) + termsInfo[term] <= today:
-            answer.append(i+1)
+    y,m,d = today.split('.')
+    today = int(y)*12*28 + int(m)*28 + int(d)
+
+    terms = {i[:1]:int(i[2:])*28 for i in terms}
+
+    for i,p in enumerate(privacies):
+        y,m,d = p.split('.')
+        d,c = d.split()
+        p = int(y)*12*28 + int(m)*28 + int(d)
         
+        if p+terms[c] <= today:
+            answer.append(i+1)
+
     return answer
