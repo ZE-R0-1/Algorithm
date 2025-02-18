@@ -22,9 +22,22 @@
 		CE8B239D2D645163008F310D /* CodeSignal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeSignal; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CE8B23A72D645260008F310D /* Exceptions for "CodeSignal" folder in "CodeSignal" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SortByHeight.swift,
+			);
+			target = CE8B239C2D645163008F310D /* CodeSignal */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CE8B239F2D645163008F310D /* CodeSignal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CE8B23A72D645260008F310D /* Exceptions for "CodeSignal" folder in "CodeSignal" target */,
+			);
 			path = CodeSignal;
 			sourceTree = "<group>";
 		};
@@ -94,6 +107,7 @@
 				TargetAttributes = {
 					CE8B239C2D645163008F310D = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -248,10 +262,12 @@
 		CE8B23A52D645163008F310D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XV38VT3FG5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,6 +275,7 @@
 		CE8B23A62D645163008F310D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XV38VT3FG5;
 				ENABLE_HARDENED_RUNTIME = YES;
