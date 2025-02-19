@@ -26,15 +26,27 @@
 		CE8B23A72D645260008F310D /* Exceptions for "CodeSignal" folder in "CodeSignal" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				absoluteValuesSumMinimization.swift,
 				AddBorder.swift,
+				alphabeticShift.swift,
 				alternatingSums.swift,
 				areEquallyStrong.swift,
 				AreSimilar.swift,
 				arrayChange.swift,
 				arrayMaximalAdjacentDifference.swift,
+				arrayReplace.swift,
+				avoidObstacles.swift,
+				BoxBlur.swift,
+				chessBoardCellColor.swift,
+				CircleOfNumbers.swift,
+				depositProfit.swift,
+				evenDigitonly.swift,
+				isIPv4Address.swift,
+				Minesweeper.swift,
 				palindromeRearranging.swift,
 				reverseInParentheses.swift,
 				SortByHeight.swift,
+				variableName.swift,
 			);
 			target = CE8B239C2D645163008F310D /* CodeSignal */;
 		};
